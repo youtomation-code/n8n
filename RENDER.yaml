@@ -1,0 +1,22 @@
+that long every time in the CLI. That is when I then ended up on 'n8n'." - **Jan Oberhauser, Founder and CEO, n8n.io**
+services:
+  - type: web
+    name: n8n
+    env: node
+    repo: https://github.com/YOUR_USERNAME/n8n
+    branch: master
+    buildCommand: yarn build
+    startCommand: yarn start
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: 'true'
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: nakul_776
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
